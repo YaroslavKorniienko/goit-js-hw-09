@@ -3,6 +3,7 @@ const stoptBtn = document.querySelector('[data-stop]');
 const bgColor = document.querySelector('body');
 
 let timerId = null;
+stoptBtn.disabled = true;
 
 startBtn.addEventListener('click', () => {
   timerId = setInterval(setBodyBgColor, 1000);
